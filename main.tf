@@ -3,7 +3,7 @@
 ###################
 terraform {
   backend "s3" {
-    bucket         = "infra-aws-tf-state"
+    bucket         = "dependency-track-aws-tf-state"
     key            = "infra/terraform.tfstate"
     region         = "us-west-2"
     dynamodb_table = "bb-infra-terraform-state-lock"
